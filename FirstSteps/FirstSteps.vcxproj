@@ -129,6 +129,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Arrays.cpp" />
+    <ClCompile Include="Exercise_Faculty.cpp" />
     <ClCompile Include="HelloWorld.cpp" />
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="TypeCasting.cpp" />

@@ -85,3 +85,45 @@ Array:
 == These data is lying in the memory consecutive.
 
 
+== Value between brackets:
+
+   constant value
+
+   "compile-time" value:  
+
+        Compiler MUST know the Value
+
+    "run-time":
+
+       The Time, when the program runs.
+
+
+
+// ==========================================
+
+Exercise:
+
+Procedure:  Faculty
+
+            n ! = 1 * 2 * ... * (n-1) * n;
+
+            3! = 1*2*3 = 6
+
+===> C/C++  Function
+
+===> Array of Size 20:
+
+Fill this Array with 1! up to 20!
+
+===> Output content of this Array to the Console.
+
+==>  Observations 
+
+// ==========================================
+
+Which tools reads our source file?
+
+Pre - Processor:  Text Replacement.
+
+Compiler
+

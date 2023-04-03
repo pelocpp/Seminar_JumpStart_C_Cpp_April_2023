@@ -20,9 +20,8 @@ void main_type_casting()
     greatest = greatest + 1;
     std::cout << greatest << std::endl;
 
-    int greatest2 = 2'147'483'648;
-    std::cout << greatest2 << std::endl;
-
+    //int greatest2 = 2'147'483'648;
+    //std::cout << greatest2 << std::endl;
 
     //int smallest = 0b11111111111111111111111111111111;
     //std::cout << smallest << std::endl;
