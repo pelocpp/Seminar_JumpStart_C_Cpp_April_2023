@@ -6,12 +6,19 @@
 void ourFirstSubroutine(int count);
 int multiplyByTwo(int value);
 
-// Function  / Procedure / Subroutine / Method 
+// global Variable
+int globalInteger = 123;
 
-int main()
+
+// Function  / Procedure / Subroutine / Method 
+void main_lifetimes()
 {
+    int* pointer = new int(999);
+
+    std::cout << globalInteger << std::endl;
+
     int count = 3;
-    ourFirstSubroutine( count );
+    ourFirstSubroutine(count);
     ourFirstSubroutine(5);
 
     int result = multiplyByTwo(5);

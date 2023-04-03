@@ -1,0 +1,87 @@
+// ==================================================
+// Notes to C /C++
+
+Lifetime of Variables
+---------------------
+
+= Local Variables
+= Global Variables
+= Dynamic Variables   (new / delete)
+
+
+// ==================================================
+// CPU
+
+Accumulator: Accu : General Purpose Working Register
+
+Add  
+
+All Arithmetic in the CPU is done in the Accu
+
+This is a 32 / 64 Bit Register
+
+// ==================================================
+// short
+
+One big Advantage:  A lot of these variables:
+
+        In Arrays:
+
+
+// Range of integral datatypes:
+
+int n = 20;
+
+Definition:   2s Complement
+
+20: 
+
+20 / 2 = 10 Rest 0
+10 / 2 = 5  Rest 0
+5  / 2 = 2  Rest 1
+2  / 2 = 1  Rest 0
+1  / 2 = 0  Rest 1
+
+Highest Bit:  Sign Bit   (+ or -)
+                         (0 or 1)
+
+
+sizeof == Number Bytes
+
+4 Bytes = 32
+
+32 Bits for integral value representation:
+
+Greatest Number:          2'147'483'647   -- int
+Greatest neg. Number:    -2'147'483'648   -- int
+
+Greatest Number (short):        32,767    -- short
+Greatest neg. Number (short):  -32,768    -- short
+
+
+
+Take Care:   Overflow
+
+Consequences can be:  Wrong Results !!!!
+
+
+Possible Solutions:
+
+a) A Data type larger (int -> long long)
+
+b) If we already have long long:
+
+   With pure C/C++ possibilites: No Solution.
+
+   Specific Libraries.
+
+
+// ==========================================
+
+Array:
+
+== Fixed Size of Variables of the SAME DATATYPE
+
+== These data is lying in the memory consecutive.
+
+
