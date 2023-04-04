@@ -216,3 +216,15 @@ ii) Dynamic Style:
 
             b) How long is the resulting buffer:
                See 2nd parameter
+
+// ===================================================
+
+Sequence of characters / string /
+
+Sequence of characters have a "special" last character:
+
+i) Null Termination Character 
+
+ii) 
+   
+

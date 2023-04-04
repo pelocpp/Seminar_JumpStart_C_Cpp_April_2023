@@ -129,6 +129,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Arrays.cpp" />
+    <ClCompile Include="Characters.cpp" />
     <ClCompile Include="Exercise_Arrays.cpp" />
     <ClCompile Include="Exercise_Dynamic.cpp" />
     <ClCompile Include="Exercise_Faculty.cpp" />

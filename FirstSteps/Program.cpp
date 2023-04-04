@@ -8,8 +8,9 @@ void arrays_01();
 void main_arrays_exercise();
 void pointer_dynamic_02();
 void test_dynamic_vs_static();
+void main_characters();
 
 extern int main()
 {
-    test_dynamic_vs_static();
+    main_characters();
 }

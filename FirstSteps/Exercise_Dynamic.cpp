@@ -2,8 +2,13 @@
 
 #pragma warning( disable : 6386 )
 
+// same name allowed - if parameter list are distinct
+// overloading functions
+
 bool splitNumber(int number, int* buffer, int length);
+
 int* splitNumber(int number, int* solutionLength);
+
 int numDigits(int number);
 
 int numDigits(int number)
@@ -23,6 +28,11 @@ bool splitNumber(int number, int* buffer, int length)
 {
     int count = numDigits(number);
 
+    // is buffer large enough?
+    if (count >= length) {
+        return false;
+    }
+
     // split number
     int index = 0;
 
@@ -32,15 +42,8 @@ bool splitNumber(int number, int* buffer, int length)
         
         number = number / 10;
 
-        if (index < length) {
-
-            buffer[index] = digit;
-            index++;
-        }
-        else
-        {
-            return false;
-        }
+        buffer[index] = digit;
+        index++;
     }
 
     return true;
@@ -68,12 +71,14 @@ int* splitNumber(int number, int* solutionLength)
         index++;
     }
 
+    // delete[] buffer;
+
     return buffer;
 }
 
 void test_static_style()
 {
-    int buffer[5] = { -1, -1, -1, -1, -1 };
+    int buffer[5] = { -1, -1, -1, -1, -1 };   // 5 digits
 
     bool success = splitNumber(999, buffer, 5);
 
@@ -93,6 +98,7 @@ void test_static_style()
         std::cout << "Error: Buffer too small" << std::endl;
     }
 }
+
 
 void test_dynamic_style()
 {
@@ -115,5 +121,3 @@ void test_dynamic_vs_static()
 
     test_dynamic_style();
 }
-
-

@@ -10,6 +10,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		Array.png = Array.png
 		Notes_01_Monday.txt = Notes_01_Monday.txt
 		Notes_02_Tuesday.txt = Notes_02_Tuesday.txt
+		Pointer.png = Pointer.png
+		StackVsHeap.png = StackVsHeap.png
+		Stack_01.png = Stack_01.png
+		Stack_02.png = Stack_02.png
+		Stack_03.png = Stack_03.png
 	EndProjectSection
 EndProject
 Global
