@@ -130,9 +130,11 @@
   <ItemGroup>
     <ClCompile Include="Arrays.cpp" />
     <ClCompile Include="Exercise_Arrays.cpp" />
+    <ClCompile Include="Exercise_Dynamic.cpp" />
     <ClCompile Include="Exercise_Faculty.cpp" />
     <ClCompile Include="HelloWorld.cpp" />
     <ClCompile Include="Pointer.cpp" />
+    <ClCompile Include="PointerDynamic.cpp" />
     <ClCompile Include="PointersAndArrays.cpp" />
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="TypeCasting.cpp" />

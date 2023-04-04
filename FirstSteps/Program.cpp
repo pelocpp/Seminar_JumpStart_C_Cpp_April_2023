@@ -6,8 +6,10 @@ void main_pointer();
 void main_arrays_and_pointers();
 void arrays_01();
 void main_arrays_exercise();
+void pointer_dynamic_02();
+void test_dynamic_vs_static();
 
 extern int main()
 {
-    main_arrays_exercise();
+    test_dynamic_vs_static();
 }

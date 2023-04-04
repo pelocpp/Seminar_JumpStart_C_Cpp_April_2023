@@ -116,3 +116,103 @@ C) Compute the Maximum Value of all values in this
 
 D) Minumum, Average Value ... - in anther subroutine
 
+// ===========================================
+
+Re-Cap:
+
+Pointer:
+
+A) Can be used with EXISTING Variables:
+
+    int n;
+    ip = & n;   // n is the "existing" variable
+
+B) Can be used with data, which has still has to be provided:
+
+    i) static:   "int n"
+
+    ii) dynamic: 'new'
+
+
+// ===========================================
+
+2 kinds of calling new:
+
+a) scalar new:
+
+     = new int;
+
+b) array-style new
+
+   = new int[length];
+
+2 kinds of how to call delete:
+
+delete ptr;    // scalar new
+
+delete[] ptr;  // array-style new 
+
+// -------------------------------------------
+
+What's happening in this situation:
+
+int* ip = new int;
+delete[] ip;
+
+// OR
+
+int* ip = new int[100];
+delete ip;
+
+UB   Undefined behaviour
+
+// -------------------------------------------
+
+Method:    2 Styles:  static style  // dynamic style 
+
+           Comparison:   pro / contra   //  bad / good
+
+
+A) Explain the Goal of the Method:  Specification.
+
+SplitNumber:
+
+    Example:   int n = 43642;
+
+               split 43642 into digits 4, 3, 6, 4, and 2.
+
+               // One or two subroutines / functions can help
+
+B) Signature of SplitNumber:
+
+i) Static Style:
+      
+            int digits [3];   // risk: can be too small
+
+            bool SplitNumber (int number, digits, 3 /* length */ )
+
+            bool SplitNumber (int number, int* buffer, int length);
+
+
+ii) Dynamic Style:
+
+            SplitNumber (int number)
+
+            SplitNumber(12345)  ==> 5 digits
+                                ==> new int [5]
+
+            int* SplitNumber (int number);
+
+            int* sp;
+            int solutionLength;
+
+            sp = SplitNumber (12345, &solutionLength);
+
+            int* SplitNumber (int number, int* solutionLength);
+     
+            a) Who calls delete on this buffer ????
+
+               The Caller !!!!
+
+            b) How long is the resulting buffer:
+               See 2nd parameter
