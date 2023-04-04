@@ -1,0 +1,116 @@
+// ==================================================
+// Notes to C /C++
+
+Pointer:
+--------
+
+What is a Pointer:
+
+i) data type
+
+ii) Variable of type pointer:
+
+    address ( Position in memory )
+
+    Position in memory: Numbers -- 10234234 / 0xFA123
+
+    This address must be in combination with a data type.
+
+
+Take care: An address looks like an integer: 
+
+==============================================
+
+
+Stack:
+
+== Area of Memory
+
+== Can only be accessed at the TOP of Stack
+
+== Push / Pop
+
+Why:
+
+Running a Programm with subroutines:
+
+a) Local Variables
+
+// =======================================
+
+Feature: Passing Parameters to a subroutine:  
+
+        Call-by-Value   (Call-by-Copy)
+
+        Call-by-Address
+
+
+
+Calling Convention in C / C++.
+
+Accessing a Variable:
+
+i) By name:       directly
+
+                  More Performant 
+
+ii) By Address:   indirectly
+
+                  Less Performant 
+
+
+
+    n = value;   // direct access
+00007FF66C1B2C47  mov         eax,dword ptr [value]  
+00007FF66C1B2C4A  mov         dword ptr [n],eax  
+
+
+    int m = *ip;   // give me the value behind the address of  a pointer
+00007FF66C1B2C55  mov         rax,qword ptr [ip]  
+00007FF66C1B2C59  mov         eax,dword ptr [rax]  
+00007FF66C1B2C5B  mov         dword ptr [m],eax  
+
+// ================================================
+
+Passing parameters to a Function:
+
+a) All Data Types are Passed via Copy  // Copy-by-Value
+
+b) Exception: An Array is passed by Address:
+
+              Address of an Array is the address of the 1. element (Index 0)
+
+// ================================================
+
+Example:
+
+Array of int of length 10:
+
+int numbers[10];
+
+double doubleNumbers[10];
+
+// example:  address of first element is 1024
+
+& numbers[0] == 1024
+
+& numbers[1] == 1028
+
+numbers + 1 :  to 1024 a value of 4 is added:
+                Why 4: because array is of type int
+
+
+     doubleNumbers + 1: a value of 8 is added 
+     because a double occupies 8 bytes in memory
+
+// ===========================================
+
+A) Define an array in a Subroutine
+
+B) Fill the Array in a Subroutine with Random Values
+
+C) Compute the Maximum Value of all values in this
+   array - in another Subroutine
+
+D) Minumum, Average Value ... - in anther subroutine
+

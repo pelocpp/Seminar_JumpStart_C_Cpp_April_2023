@@ -131,6 +131,8 @@
     <ClCompile Include="Arrays.cpp" />
     <ClCompile Include="Exercise_Faculty.cpp" />
     <ClCompile Include="HelloWorld.cpp" />
+    <ClCompile Include="Pointer.cpp" />
+    <ClCompile Include="PointersAndArrays.cpp" />
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="TypeCasting.cpp" />
   </ItemGroup>
