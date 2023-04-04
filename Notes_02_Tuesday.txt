@@ -106,8 +106,10 @@ numbers + 1 :  to 1024 a value of 4 is added:
 // ===========================================
 
 A) Define an array in a Subroutine
+   Size arbitrary (#define)
 
 B) Fill the Array in a Subroutine with Random Values
+   in the range of 1 until 100
 
 C) Compute the Maximum Value of all values in this
    array - in another Subroutine

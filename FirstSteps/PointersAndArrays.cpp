@@ -47,7 +47,7 @@ void initializeArray(int* arr, int length)
 void main_arrays_and_pointers()
 {
     // Startvalue
-    srand(time(0));  // just call ONCE
+    srand( (unsigned int) time(0));  // just call ONCE
 
     int n = rand();  // only returns positive numbers
 

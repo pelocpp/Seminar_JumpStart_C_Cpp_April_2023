@@ -5,8 +5,9 @@ void exercise_01();
 void main_pointer();
 void main_arrays_and_pointers();
 void arrays_01();
+void main_arrays_exercise();
 
 extern int main()
 {
-    main_arrays_and_pointers();
+    main_arrays_exercise();
 }
