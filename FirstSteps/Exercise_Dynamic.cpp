@@ -1,10 +1,10 @@
 #include <iostream>
 
+#pragma warning( disable : 6386 )
+
 bool splitNumber(int number, int* buffer, int length);
-
 int* splitNumber(int number, int* solutionLength);
-
-int numDigits();
+int numDigits(int number);
 
 int numDigits(int number)
 {
@@ -23,23 +23,97 @@ bool splitNumber(int number, int* buffer, int length)
 {
     int count = numDigits(number);
 
-    // split numer
+    // split number
+    int index = 0;
 
+    while (number != 0) {
+
+        int digit = number % 10;
+        
+        number = number / 10;
+
+        if (index < length) {
+
+            buffer[index] = digit;
+            index++;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    return true;
+}
+
+int* splitNumber(int number, int* solutionLength)
+{
+    int count = numDigits(number);
+
+    int* buffer = new int[count];
+
+    *solutionLength = count;
+
+    // split number
+    int index = 0;
+
+    while (number != 0) {
+
+        int digit = number % 10;
+
+        number = number / 10;
+
+        buffer[index] = digit;
+
+        index++;
+    }
+
+    return buffer;
 }
 
 void test_static_style()
 {
-    int r = numDigits(123);
+    int buffer[5] = { -1, -1, -1, -1, -1 };
+
+    bool success = splitNumber(999, buffer, 5);
+
+    if (success) {
+
+        for (int i = 0; i < 5; ++i) {
+
+            if (buffer[i] == -1) {
+                break;
+            }
+
+            std::cout << i << ": " << buffer[i] << std::endl;
+        }
+    }
+    else {
+
+        std::cout << "Error: Buffer too small" << std::endl;
+    }
 }
 
 void test_dynamic_style()
 {
+    int bufferLength = 0;
 
+    int* buffer = splitNumber(885511, &bufferLength);
+
+    for (int i = 0; i < bufferLength; ++i) {
+        std::cout << i << ": " << buffer[i] << std::endl;
+    }
+
+    delete[] buffer;
 }
 
 void test_dynamic_vs_static()
 {
     test_static_style();
+
+    std::cout << std::endl;
+
+    test_dynamic_style();
 }
 
 
