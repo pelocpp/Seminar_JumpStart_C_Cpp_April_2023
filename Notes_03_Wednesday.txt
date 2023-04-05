@@ -26,6 +26,27 @@ Word                   - 2 Bytes
 DWord (Double Word)    - 4 Bytes
 QWord (Quad Word)      - 8 Bytes
 
+-------------------------------------
+
+Least-Significant Bit:  LSB
+Most-Significant Bit:   MSB
+
+"Most-Significant Bit is the Sign Bit"
+
+Byte:                   LSB == Position 0  (from the right)
+                        MSB == Position 7
+
+Word:                   LSB == Position 0  (from the right)
+                        MSB == Position 15
+
+DWord:                  LSB == Position 0  (from the right)
+                        MSB == Position 31
+                        
+Word:                   LSB == Position 0  (from the right)
+                        MSB == Position 63
+
+-------------------------------------
+
 C/C++:  Data Types ==> Variables ==> Units in Memory
 
 char                    ==> 1 Byte
@@ -213,3 +234,105 @@ Example:
 
 ----------------------------------------------------
 
+Bitwise Left  shift	a << b:
+Bitwise Right shift	a >> b:
+
+Example:
+
+Memory Unit:  Byte
+
+0011 1010
+
+Shift to the Left:   1 Bit
+==> 0111 0100
+
+Shift to the Left:   3 Bit
+==> 1010 0000
+
+Another Example:     Ports 
+
+Flip a single Bit: 5.th bit
+
+  0001 0000
+
+  0000 0001   :: shift me to the left
+
+  Example: 3 Positions
+
+  0000 1000
+
+
+----------------------------------------
+
+Shift to the Right:
+
+Memory Unit   
+
+Do we consider Signed / Unsigned Value:
+
+0111 1111
+
+1. Example:  Most significant Bit == 0
+
+Shift to the Right: 3 Position
+
+   0000 1111
+
+2. Example:  Most significant Bit == 1
+
+1100 0011
+
+Need to specify:
+Is the Unit with / without sign
+C: signed / unsigned
+
+
+A) Shift to the Right: 3 Positions
+
+i) unsigned variant:
+
+    0001 1000
+
+ii) signed variant:
+
+    1111 1000
+
+// =====================================
+
+Shifting can be considered descriptive:
+
+What means "shifting to the left":
+
+   Multiplying by 2 
+
+0101 0101     85
+
+Shift 1 Bit to the Left:
+
+1010 1010     170
+
+What means "shifting to the right":
+
+0010 1010     42 
+
+   Dividing by 2 
+
+===================================================
+
+void setBit(unsigned short value, int pos)
+
+
+Example:
+
+   1011 0011        value
+ | 
+   0000 1000        pos == 3  (mask)
+   =========
+   1011 1011
+
+   unsigned short mask = 0x0000'0001 << pos;
+   unsigned short mask = 1           << pos;
+
+   value = value | mask;
+   //
+   value |= mask;
