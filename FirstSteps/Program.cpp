@@ -1,3 +1,5 @@
+#include "Common.h"
+
 extern void main_lifetimes();
 extern void main_type_casting();
 extern void main_type_casting_01();
@@ -11,8 +13,9 @@ void test_dynamic_vs_static();
 void main_characters();
 void main_low_level();
 void exercise_low_level();
+void main_structs();
 
 extern int main()
 {
-    exercise_low_level();
+    main_structs();
 }

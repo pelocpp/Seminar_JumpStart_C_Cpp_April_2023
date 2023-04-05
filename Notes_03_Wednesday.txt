@@ -411,3 +411,67 @@ Example:
        ===> 0000 0000 0111 1011
 
        ===>            111 1011
+
+===================================================
+===================================================
+
+
+What is a Struct ?
+
+Array:  ==> Same Datatype
+
+Several Variables ==> Distinct Datatypes
+
+Example:
+
+Time:
+
+int seconds;
+int minutes;
+int hours;
+
+Student:
+
+char[32]  name
+int       age
+int       id_number;
+double    average;
+
+
+A Struct combines several single variables,
+which belong together.
+
+// ============================================
+
+Passing a struct to a Function:
+
+A Copy is passed !!!!!!!!!!!!!!!!!!!!
+
+ONE EXCEPTION:  An Array is passed with the Address of the first element.
+
+We should pass Pointers to Structs:
+
+Accessing Variables of a Struct:
+
+Direct Access (No Pointer):      . operator (Dot)
+
+Indirect Access (With Pointer):  -> operator (Arrow)
+
+
+// ============================================
+
+Exercises:
+
+
+// Correct --- with Overflow
+void increment(Time* time);
+
+// Comparison:
+bool lessThan ( passing 2 Time variables )
+
+// Amount of seconds of a Time variable
+int timeToSeconds ( passing 1 Time variable);
+
+Example:  17 O'clock:
+
+60 * 60 * 17 
