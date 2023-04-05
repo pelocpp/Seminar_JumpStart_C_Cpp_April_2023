@@ -24,6 +24,7 @@
     <ProjectGuid>{a89f662a-1255-4d66-b381-fb46b624b795}</ProjectGuid>
     <RootNamespace>FirstSteps</RootNamespace>
     <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>JumpStart</ProjectName>
   </PropertyGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
@@ -134,6 +135,7 @@
     <ClCompile Include="Exercise_Dynamic.cpp" />
     <ClCompile Include="Exercise_Faculty.cpp" />
     <ClCompile Include="HelloWorld.cpp" />
+    <ClCompile Include="LowLevel.cpp" />
     <ClCompile Include="Pointer.cpp" />
     <ClCompile Include="PointerDynamic.cpp" />
     <ClCompile Include="PointersAndArrays.cpp" />

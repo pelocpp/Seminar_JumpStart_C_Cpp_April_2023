@@ -1,0 +1,215 @@
+// ==================================================
+// Notes to C /C++
+
+Wednesday / 3. Day:
+-------------------
+
+Bits / Bytes / Low-Level Programming
+-------------------------------------
+
+Links:
+
+https://en.cppreference.com/w/cpp/language/types
+
+https://en.cppreference.com/w/cpp/language/operator_arithmetic
+
+-------------------------------------
+
+Memory:
+
+Units in Memory:
+
+1 Byte: 8 Bits
+
+Byte
+Word                   - 2 Bytes
+DWord (Double Word)    - 4 Bytes
+QWord (Quad Word)      - 8 Bytes
+
+C/C++:  Data Types ==> Variables ==> Units in Memory
+
+char                    ==> 1 Byte
+signed char             ==> 1 Byte
+unsigned char           ==> 1 Byte
+
+short                   ==> 2 Byte
+signed short            ==> 2 Byte
+unsigned short          ==> 2 Byte
+
+int                     ==> 4 Byte
+signed int              ==> 4 Byte
+unsigned int            ==> 4 Byte
+
+long                    ==> 4 Byte
+signed long             ==> 4 Byte
+unsigned long           ==> 4 Byte
+
+long long               ==> 8 Byte
+signed long long        ==> 8 Byte
+unsigned long long      ==> 8 Byte
+
+
+C# CTS / Common Type System: 
+
+   System.uint_8   ==> byte
+   System.uint_32
+   System.int_8   
+   System.int_32   ==> int
+
+signed <-> unsigned
+
+Question: 
+Only positive numbers OR positive and negative numbers.
+
+A) Unsigned Char  : 8 Bits / 1 Byte
+
+B) Signed Char
+
+
+Example:   1111 1111   ===> 255
+
+Why: "Algorithm"  ==> 2s Complement:
+
+Bit at Position 0:    1            (if bit is 1 or 0, not set)
+Bit at Position 1:    2 or 2 ^ 1     "
+Bit at Position 2:    4 or 2 ^ 2     "
+Bit at Position 3:    8 or 2 ^ 3     "
+
+Bit at Position 4:    16 or 2 ^ 4    "
+Bit at Position 5:    32 or 2 ^ 5    "
+Bit at Position 6:    64 or 2 ^ 6    "
+Bit at Position 7:   128 or 2 ^ 7    "
+
+Example:
+
+0010 1100  ==>  4 + 8 + 32 = 44
+
+==================================================
+
+Ranges:
+
+A) Unsigned Char  : 8 Bits available 
+
+                    ===> 0 .. 255
+
+B) Signed Char:   1 Bit is reserved for the sign (+,-)
+                  7 Bits are available:
+
+                    ===> -128 ... 127
+
+------------
+
+A) unsigned int  : 16 Bits available 
+
+                    ===> 0 .. 65.535
+
+B) signed int:   1 Bit is reserved for the sign (+,-)
+                  7 Bits are available:
+
+                    ===> -32.768 ... 32.767
+
+                    A) unsigned char  : 16 Bits available 
+
+                    ===> 0 .. 65.535
+
+------------
+
+unsigned int:    ===> 0 ... 4,294,967,295
+
+signed int:      ===> -2,147,483,648 ... 2,147,483,647
+
+------------
+
+unsigned long long:    ===> -9,223,372,036,854,775,808 ... 
+                             9,223,372,036,854,775,807
+
+signed long long:      ===> -2,147,483,648 ... 2,147,483,647
+
+
+==================================================
+
+C: char has 2 meanings:
+
+simple numbers OR real characters
+
+char ch;
+char ch1;
+
+ch = '!';
+
+OR
+
+ch = 78;   // 'N'
+
+
+ch = 12;
+ch1 = 23;
+ch = ch1 + ch;   // 35
+
+==================================================
+
+Operations:
+
+Arithmetic Operations:  +, -, *, /
+
+17 + 23 = 0001'0001  + 0001'0111 = 0010'1000 = 40
+
+Opcode:  add
+
+==================================================
+
+Bitwise Operations:
+
+Introduction / Hint:
+
+Example: Firmware // Communicate with HW
+
+HW can provide information:  Port
+
+Not Standard: outb and inb   // out byte // read a byte
+
+----------------------------------------------------
+
+Bitwise NOT:  	~a        Tilde	   
+Bitwise AND:	a & b	  Single Ampersand
+Bitwise OR:	    a | b	  Single Vertical Bar
+Bitwise XOR:	a ^ b	  Single Hat
+
+
+Don't mix it up:
+
+Logical Negation:  	!a        Tilde	   
+Logical And:	a && b	      Double Ampersand
+Logical Or:	    a || b	      Double Vertical Bar
+
+
+Bitwise AND:   1 & 1 == 1
+               1 & 0 == 0
+               0 & 1 == 0
+               0 & 0 == 0
+
+Bitwise OR :   1 | 1 == 1
+               1 | 0 == 1
+               0 | 1 == 1
+               0 | 0 == 0
+
+Bitwise XOR:   1 ^ 1 == 0
+               1 ^ 0 == 1
+               0 ^ 1 == 1
+               0 ^ 0 == 0
+
+Bitwise Not :  1  => 0
+               0  => 1
+
+
+
+Example:
+
+   1011 0011  
+ & 
+   0100 1101
+   =========
+   0000 0001
+
+----------------------------------------------------
+

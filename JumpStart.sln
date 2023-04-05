@@ -3,13 +3,14 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "FirstSteps", "FirstSteps\FirstSteps.vcxproj", "{A89F662A-1255-4D66-B381-FB46B624B795}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "JumpStart", "FirstSteps\FirstSteps.vcxproj", "{A89F662A-1255-4D66-B381-FB46B624B795}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A13C8F71-7D73-440D-8321-793293730B10}"
 	ProjectSection(SolutionItems) = preProject
 		Array.png = Array.png
 		Notes_01_Monday.txt = Notes_01_Monday.txt
 		Notes_02_Tuesday.txt = Notes_02_Tuesday.txt
+		Notes_03_Wednesday.txt = Notes_03_Wednesday.txt
 		Pointer.png = Pointer.png
 		StackVsHeap.png = StackVsHeap.png
 		Stack_01.png = Stack_01.png

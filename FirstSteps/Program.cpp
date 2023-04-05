@@ -9,8 +9,9 @@ void main_arrays_exercise();
 void pointer_dynamic_02();
 void test_dynamic_vs_static();
 void main_characters();
+void main_low_level();
 
 extern int main()
 {
-    main_characters();
+    main_low_level();
 }
