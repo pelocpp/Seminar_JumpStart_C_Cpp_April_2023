@@ -103,9 +103,15 @@ void main_low_level_06_unsigned()
     std::cout << bsShifted << std::endl;
 }
 
+
+void main_xxx()
+{
+    signed char byte = 127;
+}
+
 void main_low_level_07_signed()
 {
-    signed char byte = 0b1010'0011;
+    signed char byte = 0b0010'0011;  // positive constant
     std::bitset<8> bs(byte);
 
     signed char byteShifted = byte >> 1;
@@ -134,15 +140,65 @@ void setBitEx(unsigned short* value, int pos)
     *value = *value | mask;
 }
 
-void main_low_level()
+void main_low_level_08_setBit()
 {
     unsigned short s = 0b1011'0011;
     std::bitset<16> bsBefore(s);
     std::cout << bsBefore << std::endl;
 
-    setBitEx(& s, 3);
+    setBitEx(&s, 3);
 
     std::bitset<16> bsAfter(s);
     std::cout << bsAfter << std::endl;
+}
 
+// ===========================================
+
+void clearBit(unsigned short value, int pos)
+{
+    unsigned short mask = 1 << pos;
+    mask = ~ mask;
+
+    // or 
+
+    // unsigned short mask = ~ (1 << pos);
+
+    value = value & mask;
+}
+
+
+void clearBitEx(unsigned short* value, int pos)
+{
+    unsigned short mask = 1 << pos;
+
+    mask = ~mask;
+
+    // or 
+
+    // unsigned short mask = ~ (1 << pos);
+
+    *value = *value & mask;
+}
+
+
+void main_low_level_09_clearBit()
+{
+    unsigned short s = 0b1011'0111;
+    std::bitset<16> bsBefore(s);
+    std::cout << bsBefore << std::endl;
+
+    clearBitEx(& s, 2);
+
+    std::bitset<16> bsAfter(s);
+    std::cout << bsAfter << std::endl;
+}
+
+// ===========================================
+
+
+// ===========================================
+
+void main_low_level()
+{
+    main_low_level_09_clearBit();
 }

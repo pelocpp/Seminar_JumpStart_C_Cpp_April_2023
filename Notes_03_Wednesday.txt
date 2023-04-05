@@ -321,7 +321,6 @@ What means "shifting to the right":
 
 void setBit(unsigned short value, int pos)
 
-
 Example:
 
    1011 0011        value
@@ -336,3 +335,74 @@ Example:
    value = value | mask;
    //
    value |= mask;
+
+
+===================================================
+
+void clearBit(unsigned short value, int pos)
+
+Example:
+
+   1011 0011        value
+ & 
+   1111 1101        pos == 2  (mask)
+   =========
+   1011 0001
+
+
+
+===================================================
+
+Repetition:
+
+Right Shift:
+
+---------------------
+
+Left Shift:   At the RIGHT MOST Position (LSB)
+              ONLY 0's are inserted.
+
+---------------------
+
+Right Shift:  At the LEFT MOST Position (MSB)
+
+     a) Variable is UNSIGNED:
+
+        ONLY 0's are inserted at / from the left
+
+     b) Variable is SIGNED:
+
+        i)  MSB: Value is 1
+
+                ONLY 1's are inserted at / from the left
+
+        ii) MSB: Value is 0
+
+                ONLY 0's are inserted at / from the left
+
+
+===================================================
+
+int countOnes (unsigned short value);
+
+     // 0101 1100 1111 0000 ===> 8
+
+int countZeros (unsigned short value);
+
+     // 0000 1100 1111 0000 ===> 10
+
+===================================================
+
+void printIntAsBinary   (unsigned int value);
+
+void printShortAsBinary (unsigned short value);
+
+Example:
+
+    decimal to binary
+
+    printShortAsBinary (123);
+
+       ===> 0000 0000 0111 1011
+
+       ===>            111 1011
