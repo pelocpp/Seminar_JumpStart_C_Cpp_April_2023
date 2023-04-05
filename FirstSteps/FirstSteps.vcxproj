@@ -134,6 +134,7 @@
     <ClCompile Include="Exercise_Arrays.cpp" />
     <ClCompile Include="Exercise_Dynamic.cpp" />
     <ClCompile Include="Exercise_Faculty.cpp" />
+    <ClCompile Include="Exercise_LowLevel.cpp" />
     <ClCompile Include="HelloWorld.cpp" />
     <ClCompile Include="LowLevel.cpp" />
     <ClCompile Include="Pointer.cpp" />
