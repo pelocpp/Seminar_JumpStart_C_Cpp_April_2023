@@ -138,6 +138,11 @@ bool operator >= ();
    Decide: Do I implement these operators
            in or oputside the class?
 
+Last Hint: You needn't to implement all of these 6 Operators.
+An Operator can be implemented with the help of another operator. 
+
+
+
 C)      int Diff (const Time& other);
 
 Diff computes the Difference of 2 Time Objects in seconds.
