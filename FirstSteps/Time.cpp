@@ -116,3 +116,43 @@ Time Time::add4(const Time& t) const
 }
 
 // ======================================================
+
+//Time Time::operator+ (const Time& other) const
+//{
+//    Time result;
+//
+//    // There is no Overflow handled
+//    // Left as exercise to you
+//    result.m_hours = this->m_hours + other.m_hours;
+//    result.m_minutes = this->m_minutes + other.m_minutes;
+//    result.m_seconds = this->m_seconds + other.m_seconds;
+//
+//    return result;
+//}
+
+Time operator+ (const Time& t1, const Time& t2)
+{
+    Time result;
+
+    // There is no Overflow handled
+    // Left as exercise to you
+    result.m_hours = t1.m_hours + t2.m_hours;
+    result.m_minutes = t1.m_minutes + t2.m_minutes;
+    result.m_seconds = t1.m_seconds + t2.m_seconds;
+
+    return result;
+}
+
+//Time operator+ (const Time& t1, const Time& t2)
+//{
+//    // There is no Overflow handled
+//    // Left as exercise to you
+//    int hours = t1.getHours() + t2.getHours();
+//    int minutes = t1.getMinutes() + t2.getMinutes();
+//    int seconds = t1.getSeconds() + t2.getSeconds();
+//
+//    Time result (hours, minutes, seconds);
+//    return result;
+//
+//    // return Time (hours, minutes, seconds);
+//}

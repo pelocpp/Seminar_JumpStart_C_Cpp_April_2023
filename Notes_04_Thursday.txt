@@ -93,6 +93,57 @@ immutable // current object cannot be changed /
 
 Performance:
 
+// =========================================================
 
+Feature OO Programming:
+
+Operator Overloading.
+
+Time t1;
+Time t2;
+
+if (t1.lessThan (t2)) ...
+
+if (t1 <= t2) ...
+
+Time t3 = t1.add (t2);
+
+Time t3 = t1 + t2;
+
+How?    Like a Method  
+
+        What the Name of this Method?
+
+        operator + 
+
+Time t3 = t1 + t2;
+
+// ================================================
+
+Excercises:
+
+A) Please implement operator+ correctly.
+
+   With Overflow
+
+B) Some more operators:
+
+bool operator == ();
+bool operator != ();
+bool operator <  ();
+bool operator <= ();
+bool operator >  ();
+bool operator >= ();
+
+   Decide: Do I implement these operators
+           in or oputside the class?
+
+C)      int Diff (const Time& other);
+
+Diff computes the Difference of 2 Time Objects in seconds.
+
+Note / Hint: Private helper methods can / could help.
+
+TimeToSeconds ...
 
 

@@ -19,8 +19,9 @@ void main_time();
 void main_break();
 void main_pointers_vs_references();
 void main_pointers_vs_references_02();
+void main_operators();
 
 int main()
 {
-    main_pointers_vs_references_02();
+    main_operators();
 }

@@ -8,6 +8,8 @@
 
 class Time
 {
+    friend Time operator+ (const Time& t1, const Time& t2);
+
 private:
     int m_hours;
     int m_minutes;
@@ -40,4 +42,12 @@ public:
     //  Pointers vs References
     Time add3(Time* t) const;
     Time add4(const Time& t) const;
+
+public:
+    // Time operator+ ( const Time& other ) const;
 };
+
+
+// global function
+Time operator+ (const Time& t1, const Time& t2) ;
+

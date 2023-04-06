@@ -25,3 +25,17 @@ void main_break()
 
 
 }
+
+void main_operators()
+{
+    Time t1( 15, 8, 20);
+
+    Time t2( 2, 12, 50);
+
+    Time result;
+
+    result = t1 + t2;   // infix Notation
+
+    result = t1.operator+ (t2);
+
+}

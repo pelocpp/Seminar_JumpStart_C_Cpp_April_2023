@@ -50,7 +50,7 @@ void main_pointers_vs_references_02()
 
     // Using ip with ++:  "Pointer Arithmetic"
     ip++;     // new ..... new and array
-    (*ip)++;
+  //  (*ip)++;
 
     // reference
     int& ri = n;
