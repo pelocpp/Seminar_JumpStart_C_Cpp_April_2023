@@ -1,5 +1,6 @@
 #include <iostream>
 
+
 void main_pointer_01()
 {
     std::cout << "Pointer:" << std::endl;
@@ -8,6 +9,16 @@ void main_pointer_01()
     int value = 123;
 
     n = value;   // direct access
+
+    int* pointer = 0;   // empty pointer / invalid address
+
+    int* pointer1 = NULL;
+
+    value = *pointer;
+
+    if (pointer == 0) {
+        // no value yet / no address yet
+    }
 
     int* ip;
 

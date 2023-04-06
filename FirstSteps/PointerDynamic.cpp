@@ -12,7 +12,7 @@ void pointer_dynamic_array ()
     ip = new int [n];   // new allows content of n
                         // provided at runtime
 
-    int array[10];     // static array / compile time
+ //   int array[10];     // static array / compile time
 
     // -----------------------------------------------
 

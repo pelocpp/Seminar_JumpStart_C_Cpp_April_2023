@@ -137,15 +137,20 @@
     <ClCompile Include="Exercise_LowLevel.cpp" />
     <ClCompile Include="HelloWorld.cpp" />
     <ClCompile Include="LowLevel.cpp" />
+    <ClCompile Include="Main_Time.cpp" />
     <ClCompile Include="Pointer.cpp" />
     <ClCompile Include="PointerDynamic.cpp" />
     <ClCompile Include="PointersAndArrays.cpp" />
+    <ClCompile Include="Pointers_vs_References.cpp" />
     <ClCompile Include="Program.cpp" />
+    <ClCompile Include="Sractch.cpp" />
     <ClCompile Include="Strukturen.cpp" />
+    <ClCompile Include="Time.cpp" />
     <ClCompile Include="TypeCasting.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.h" />
+    <ClInclude Include="Time.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

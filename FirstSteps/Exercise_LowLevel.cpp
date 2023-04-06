@@ -133,8 +133,12 @@ void low_level_02_set_clear_bit()
 
 // ===================================================
 
+int g_data;
+
 int countOnes(int value)
 {
+    g_data = 123;
+
     int result = 0;
 
     // word size in bits

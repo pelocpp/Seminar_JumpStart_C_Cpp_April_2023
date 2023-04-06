@@ -57,9 +57,24 @@
     <ClCompile Include="Strukturen.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Time.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Main_Time.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Sractch.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="Pointers_vs_References.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Time.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

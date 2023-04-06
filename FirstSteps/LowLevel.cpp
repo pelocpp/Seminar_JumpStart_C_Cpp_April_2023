@@ -1,79 +1,83 @@
 #include <iostream>
 #include <bitset>
 
-void main_low_level_01()
+void low_level_01_bitwise_and()
 {
-    unsigned short words1 = 0b1011'0011;
-    unsigned short words2 = 0b1100'1101;
-    unsigned short words = words1 & words2;
+    unsigned short word1 = 0b1011'0011;
+    unsigned short word2 = 0b1100'1101;
 
-    std::bitset<16> bs1(words1);
-    std::bitset<16> bs2(words2);
-    std::bitset<16> bs (words);
+    unsigned short word = word1 & word2;
 
-    std::cout << words1 << std::endl;
-    std::cout << words2 << std::endl;
-    std::cout << words << std::endl;
+    std::bitset<16> bs1(word1);
+    std::bitset<16> bs2(word2);
+    std::bitset<16> bs (word);
+
+    std::cout << word1 << std::endl;
+    std::cout << word2 << std::endl;
+    std::cout << word << std::endl;
 
     std::cout << bs1 << std::endl;
     std::cout << bs2 << std::endl;
     std::cout << bs << std::endl;
 }
 
-void main_low_level_02()
+void low_level_02_bitwise_or()
 {
-    unsigned short words1 = 0b1011'0011;
-    unsigned short words2 = 0b1000'1101;
-    unsigned short words = words1 | words2;
+    unsigned short word1 = 0b1011'0011;
+    unsigned short word2 = 0b1000'1101;
 
-    std::bitset<16> bs1(words1);
-    std::bitset<16> bs2(words2);
-    std::bitset<16> bs(words);
+    unsigned short word = word1 | word2;
 
-    std::cout << words1 << std::endl;
-    std::cout << words2 << std::endl;
-    std::cout << words << std::endl;
+    std::bitset<16> bs1(word1);
+    std::bitset<16> bs2(word2);
+    std::bitset<16> bs(word);
+
+    std::cout << word1 << std::endl;
+    std::cout << word2 << std::endl;
+    std::cout << word << std::endl;
 
     std::cout << bs1 << std::endl;
     std::cout << bs2 << std::endl;
     std::cout << bs << std::endl;
 }
 
-void main_low_level_03()
+void low_level_03_bitwise_xor()
 {
-    unsigned short words1 = 0b1011'0011;
-    unsigned short words2 = 0b1000'1101;
-    unsigned short words = words1 ^ words2;
+    unsigned short word1 = 0b1011'0011;
+    unsigned short word2 = 0b1000'1101;
 
-    std::bitset<16> bs1(words1);
-    std::bitset<16> bs2(words2);
-    std::bitset<16> bs(words);
+    unsigned short word = word1 ^ word2;
 
-    std::cout << words1 << std::endl;
-    std::cout << words2 << std::endl;
-    std::cout << words << std::endl;
+    std::bitset<16> bs1(word1);
+    std::bitset<16> bs2(word2);
+    std::bitset<16> bs(word);
+
+    std::cout << word1 << std::endl;
+    std::cout << word2 << std::endl;
+    std::cout << word << std::endl;
 
     std::cout << bs1 << std::endl;
     std::cout << bs2 << std::endl;
     std::cout << bs << std::endl;
 }
 
-void main_low_level_04()
+void low_level_04_bitwise_negate()
 {
-    unsigned short words = 0b1011'0011;
-    unsigned short wordsNegated = ~ words;
+    unsigned short word = 0b1011'0011;
 
-    std::bitset<16> bs1(words);
-    std::bitset<16> bs2(wordsNegated);
+    unsigned short wordNegated = ~ word;
 
-    std::cout << words << std::endl;
-    std::cout << wordsNegated << std::endl;
+    std::bitset<16> bsWord(word);
+    std::bitset<16> bsWordNegated(wordNegated);
 
-    std::cout << bs1 << std::endl;
-    std::cout << bs2 << std::endl;
+    std::cout << word << std::endl;
+    std::cout << wordNegated << std::endl;
+
+    std::cout << bsWord << std::endl;
+    std::cout << bsWordNegated << std::endl;
 }
 
-void main_low_level_05()
+void low_level_05_bitwise_negate()
 {
     unsigned char byte = 0b0010'0011;
     std::bitset<8> bs(byte);
@@ -103,15 +107,9 @@ void main_low_level_06_unsigned()
     std::cout << bsShifted << std::endl;
 }
 
-
-void main_xxx()
-{
-    signed char byte = 127;
-}
-
 void main_low_level_07_signed()
 {
-    signed char byte = 0b0010'0011;  // positive constant
+    signed char byte = 0b0010'0011;
     std::bitset<8> bs(byte);
 
     signed char byteShifted = byte >> 1;

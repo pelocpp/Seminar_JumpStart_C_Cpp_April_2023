@@ -1,0 +1,98 @@
+// ==================================================
+// Notes to C /C++
+
+Thursday / 4. Day:
+-------------------
+
+Object-Oriented Programming
+---------------------------
+
+Repetition // Syntax
+
+Time 
+
+C++: 2 Files  Header + Implementation
+
+     3 File:  Program
+
+
+m_:  member
+
+
+Access Rights: 
+
+ public, private, protected
+
+// ---------------------------------
+
+Paradigma of OO Programming:
+
+An object has at each time in its life cycle
+VALID Values.
+
+"From Birth to Death"
+
+// ---------------------------------
+
+#pragma once
+
+prohibits errors of the kind "Class definded TWICE"
+
+// ---------------------------------
+
+Function versus Method:
+
+// ---------------------------------
+
+
+Error Handling in a setter-Method
+
+Error Handling of "Not so severe" errors:
+
+A) Logging / Printing
+
+B) Silent Error Recovery: Don't modify the Value
+
+     in combination with Logging / Printing
+
+C) Exception-Handling
+
+// ---------------------------------
+
+Contructors:
+
+Special Method to initialize an Object
+
+What's special:
+
+I)  The name:             Same as Name of the Class
+
+II) The return data type: Nothing ( also NOT void)
+
+
+// ---------------------------------
+
+
+11:15:00
+
+01:00:00
+
+
+Addition: 11:15:00 plus 01:00:00 == 12:15:00 
+
+add
+
+// =========================================================
+
+mutable / immutable:
+
+mutable // current object can be changed / modified
+
+immutable // current object cannot be changed /
+             modified with this method
+
+Performance:
+
+
+
+
