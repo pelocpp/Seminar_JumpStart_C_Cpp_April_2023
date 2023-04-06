@@ -152,3 +152,14 @@ Note / Hint: Private helper methods can / could help.
 TimeToSeconds ...
 
 
+============================================================
+
+Solution:
+
+https://github.com/pelocpp/cpp_basic_examples
+
+https://github.com/pelocpp/cpp_basic_examples/blob/master/Examples/Time/Resources/Readme.md
+
+https://github.com/pelocpp/cpp_basic_examples/tree/master/Examples/Time
+
+============================================================

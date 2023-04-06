@@ -156,3 +156,76 @@ Time operator+ (const Time& t1, const Time& t2)
 //
 //    // return Time (hours, minutes, seconds);
 //}
+
+// comparison operators
+bool operator== (const Time& t1, const Time& t2)
+{
+    return
+        t1.m_seconds == t2.m_seconds &&
+        t1.m_minutes == t2.m_minutes &&
+        t1.m_hours == t2.m_hours;
+}
+
+bool operator!= (const Time& t1, const Time& t2)
+{
+    return !(t1 == t2);
+}
+
+bool operator<= (const Time& t1, const Time& t2)
+{
+    return t1 < t2 || t1 == t2;
+}
+
+bool operator<  (const Time& t1, const Time& t2)
+{
+    if (t1.m_hours < t2.m_hours)
+        return true;
+
+    if (t1.m_hours == t2.m_hours && t1.m_minutes < t2.m_minutes)
+        return true;
+
+    if (t1.m_hours == t2.m_hours && t1.m_minutes == t2.m_minutes && t1.m_seconds < t2.m_seconds)
+        return true;
+
+    return false;
+}
+
+bool operator>= (const Time& t1, const Time& t2)
+{
+    return !(t1 < t2);
+}
+
+bool operator>  (const Time& t1, const Time& t2)
+{
+    return !(t1 <= t2);
+}
+
+int Time::diff(const Time& t) const
+{
+    int leftSeconds = timeToSeconds();
+    int rightSeconds = t.timeToSeconds();
+
+    if (leftSeconds <= rightSeconds) {
+
+        return rightSeconds - leftSeconds;
+    }
+    else {
+
+        return leftSeconds - rightSeconds;
+    }
+}
+
+// helper methods
+int Time::timeToSeconds() const
+{
+    return m_hours * 3600 + m_minutes * 60 + m_seconds;
+}
+
+void Time::secondsToTime(int seconds)
+{
+    m_hours = seconds / 3600;
+    seconds = seconds % 3600;
+    m_minutes = seconds / 60;
+    m_seconds = seconds % 60;
+}
+

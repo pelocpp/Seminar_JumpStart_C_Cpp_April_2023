@@ -43,10 +43,24 @@ public:
     Time add3(Time* t) const;
     Time add4(const Time& t) const;
 
+    int diff(const Time& t) const;
+
 public:
     // Time operator+ ( const Time& other ) const;
-};
 
+    // comparison operators
+    friend bool operator== (const Time& t1, const Time& t2);
+    friend bool operator!= (const Time& t1, const Time& t2);
+    friend bool operator<= (const Time& t1, const Time& t2);
+    friend bool operator<  (const Time& t1, const Time& t2);
+    friend bool operator>= (const Time& t1, const Time& t2);
+    friend bool operator>  (const Time& t1, const Time& t2);
+
+private:
+    // helper methods
+    int timeToSeconds() const;
+    void secondsToTime(int seconds);
+};
 
 // global function
 Time operator+ (const Time& t1, const Time& t2) ;

@@ -34,8 +34,5 @@ void main_operators()
 
     Time result;
 
-    result = t1 + t2;   // infix Notation
-
-    result = t1.operator+ (t2);
-
+    result = t1 + t2;
 }
