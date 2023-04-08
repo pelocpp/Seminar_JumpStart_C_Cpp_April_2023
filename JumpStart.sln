@@ -8,6 +8,8 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A13C8F71-7D73-440D-8321-793293730B10}"
 	ProjectSection(SolutionItems) = preProject
 		Array.png = Array.png
+		Mutable_vs_Immutable.png = Mutable_vs_Immutable.png
+		Notes_00_General.txt = Notes_00_General.txt
 		Notes_01_Monday.txt = Notes_01_Monday.txt
 		Notes_02_Tuesday.txt = Notes_02_Tuesday.txt
 		Notes_03_Wednesday.txt = Notes_03_Wednesday.txt
