@@ -8,10 +8,9 @@ Links to the Examples of this Jump Start Course:
 
 
 ## C++ Basic Examples:
--------------------
+
 
 [C++ Basic Examples](https://github.com/pelocpp/cpp_basic_examples)
-
 
 
 ## Low-Level Programming in C/C++
