@@ -13,6 +13,9 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="Source Files\Accounts">
+      <UniqueIdentifier>{b81bb2bb-59f1-4a74-9923-ce37b5b99981}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="HelloWorld.cpp">
@@ -72,6 +75,21 @@
     <ClCompile Include="Inheritance.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Account\Account.cpp">
+      <Filter>Source Files\Accounts</Filter>
+    </ClCompile>
+    <ClCompile Include="Account\CreditAccount.cpp">
+      <Filter>Source Files\Accounts</Filter>
+    </ClCompile>
+    <ClCompile Include="Account\DepositAccount.cpp">
+      <Filter>Source Files\Accounts</Filter>
+    </ClCompile>
+    <ClCompile Include="Account\Exercise_Accounts.cpp">
+      <Filter>Source Files\Accounts</Filter>
+    </ClCompile>
+    <ClCompile Include="Account\StudentsAccount.cpp">
+      <Filter>Source Files\Accounts</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.h">
@@ -79,6 +97,21 @@
     </ClInclude>
     <ClInclude Include="Time.h">
       <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Account\Account.h">
+      <Filter>Source Files\Accounts</Filter>
+    </ClInclude>
+    <ClInclude Include="Account\CreditAccount.h">
+      <Filter>Source Files\Accounts</Filter>
+    </ClInclude>
+    <ClInclude Include="Account\DepositAccount.h">
+      <Filter>Source Files\Accounts</Filter>
+    </ClInclude>
+    <ClInclude Include="Account\IAccount.h">
+      <Filter>Source Files\Accounts</Filter>
+    </ClInclude>
+    <ClInclude Include="Account\StudentsAccount.h">
+      <Filter>Source Files\Accounts</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

@@ -21,8 +21,9 @@ void main_pointers_vs_references();
 void main_pointers_vs_references_02();
 void main_operators();
 void main_inheritance();
+int main_accounts();
 
 int main()
 {
-    main_inheritance();
+    main_accounts();
 }

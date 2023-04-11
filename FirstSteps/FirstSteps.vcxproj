@@ -129,6 +129,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="Account\Account.cpp" />
+    <ClCompile Include="Account\CreditAccount.cpp" />
+    <ClCompile Include="Account\DepositAccount.cpp" />
+    <ClCompile Include="Account\Exercise_Accounts.cpp" />
+    <ClCompile Include="Account\StudentsAccount.cpp" />
     <ClCompile Include="Arrays.cpp" />
     <ClCompile Include="Characters.cpp" />
     <ClCompile Include="Exercise_Arrays.cpp" />
@@ -150,6 +155,11 @@
     <ClCompile Include="TypeCasting.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Account\Account.h" />
+    <ClInclude Include="Account\CreditAccount.h" />
+    <ClInclude Include="Account\DepositAccount.h" />
+    <ClInclude Include="Account\IAccount.h" />
+    <ClInclude Include="Account\StudentsAccount.h" />
     <ClInclude Include="Common.h" />
     <ClInclude Include="Time.h" />
   </ItemGroup>

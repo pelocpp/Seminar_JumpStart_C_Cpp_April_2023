@@ -7,12 +7,11 @@ public:
     virtual void paint() = 0;   // NO IMPLEMENTATION
     virtual void eraseBackground() = 0;   // NO IMPLEMENTATION
     virtual void drawBorder() = 0;
-
-private:
-    int m_data;
 };
 
 // ==========================================
+
+// Abstract Class:  Incomplete / Abstract / Helper Class
 
 class Rectangle : public IRectangleConcept
 {
@@ -41,16 +40,13 @@ private:
     int m_height;
 
 public:
-    // public interface
-    virtual void paint() {
-        std::cout << "in Class Rectangle" << std::endl;
-    }
-
-    // Extremely short implementation
+    // Extremely short implementations
     void eraseBackground() override {}
     void drawBorder() override {}
 }; 
 
+
+// Concrete Class / Complete Class
 class ColoredRectangle : public Rectangle
 {
 public:
@@ -105,11 +101,15 @@ public:
 
         std::cout << "in class TransparantRectangle" << std::endl;
     }
+
+    // additional methods
+    void erase() {}
 };
 
 void main_inheritance_01()
 {
-    Rectangle r (10, 10, 20, 10);
+    // Rectangle r (10, 10, 20, 10);
+
     ColoredRectangle cr (10, 10, 20, 10, 99);
 
     cr.paint ();
@@ -137,7 +137,10 @@ void main_inheritance_03()
     TransparantRectangle tr2;
     ColoredRectangle cr3;
 
-    Rectangle* rectangles[5] = { &cr1, &tr1, &cr2, &tr2, &cr3 };
+    IRectangleConcept* rectangles[5] = 
+    {
+        &cr1, &tr1, &cr2, &tr2, &cr3 
+    };
 
     for (int i = 0; i < 5; ++i)
     {
@@ -177,6 +180,9 @@ IRectangleConcept* FactoryForColoredRectangle()
     ColoredRectangle* crp =
         new ColoredRectangle(10, 10, 20, 10, 99);
 
+    //AnotherColoredRectangle* crp =
+    //    new AnotherColoredRectangle(10, 10, 20, 10, 99);
+
     return crp;
 }
 
@@ -192,6 +198,19 @@ void main_inheritance_05()
     crp->drawBorder();
     crp->eraseBackground();
     crp->paint();
+}
+
+void main_inheritance_06()
+{
+    TransparantRectangle tr(10, 10, 20, 10, 99);
+
+    IRectangleConcept* rp;
+
+    rp = &tr; 
+
+    tr.erase();
+
+  //  rp->erase();
 }
 
 void main_inheritance()
