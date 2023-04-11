@@ -99,6 +99,14 @@ virtual method:
    which method will be invoked
 
 
+   ------------------------------------------------
+
+   Once Virtual -- Always virtual
+
+   ------------------------------------------------
+
+
+
 No Virtual:
 
 >> The Datatype of the Pointer AT COMPILETIME decides,
@@ -129,7 +137,9 @@ Take Care:
 
 One possible Disadvantage of "Virtual Function Call Mechanism":
 
+virtual:      INDIRECT Call Method (Performance)
 
+non-virtual:  DIRECT Call Method (better Performance)
 
 // ========================================================
 
@@ -142,5 +152,164 @@ The method of the child class HIDES the method in the base class
 VERSTECKEN 
 
 // ========================================================
+
+Polymorphism:
+
+A) Reduction to a type of a Base Class: eg ColoredRect ==> Rectangle
+
+B) Calling virtual methods of a Base Class:
+
+     ====> The Method of the actual object is Called !!!
+
+// ========================================================
+
+Keyword override:
+
+Since C++ 11: Available
+
+Advantage of this Keyword:
+
+A contract is established between
+base and child class.
+
+// ========================================================
+
+interface and abstract class
+
+Tiny Disadvantage in C++:
+
+Keyword 'interface' : Does NOT exist
+
+Keyword 'abstract' :  Does NOT exist
+
+The FEATURES of interface and abstract class EXIST !!!!
+
+// ========================================================
+
+What is the concept 'interface' in an OO Language ?
+
+Example:
+
+You are implementing "Functionality"
+
+Defintion:
+
+An interface is a Contract.
+
+Classes can fulfil / implement / realize a Contract.
+
+
+// ========================================================
+
+What is an Abstract Class ?????
+
+An incomplete class.
+
+What is an Incomplete class ?????
+
+E.g.: A Class, that whats to fulfil an Interface / Contract,
+      
+       but does not define (implement) all methods
+       
+       of this interface.
+
+Abstract Class: 
+
+  A)  Is a Helper of an Interface:
+
+      According to the implementation of SOME Methods
+
+  B)  May / should have data
+
+
+  Example:
+
+
+  I)  Interface:  IRectangleConcept
+   
+  II)  Partial Class / Helper Class:
+
+       class Rectangle
+
+  III) Concrete Classes:
+
+       ColoredRectangle
+       TransparentRectangle
+
+
+// =========================================================================
+
+We are going to the Sparkasse
+
+A) Konto // Account
+
+B) to deposit  // einzahlen
+
+C) to withdraw // abheben  ==> bool 
+
+              true:  worked / hat geklappt
+              false: did not work / not enough money available
+
+D) getBalance // Kontostand abfragen
+
+--------------------------------------------
+
+F) GiroKonto      // CreditAccount
+
+       == Limit // GiroLimit   ==>  minimum balance = maximum credit
+
+       == to withdraw:  true:  limit AND balance are fine.
+                        false: not enough money available
+
+G) StudentenKonto // StudentsAccount
+
+       == to withdraw:  NO Limit / NO Credit exists
+
+
+H) Sparbuch       // SavingsAccount
+
+       == to withdraw:  NO Limit / NO Credit exists
+
+       == Member Data:  interest rate // Zinssatz / Zinsrate
+
+          Additional method:  addInterestPerYear:
+
+                - adds interest to the balance
+
+
+
+--------------------------------------------
+
+Question:  Do you have an idea of an Interface
+
+            IAccount  ???
+
+--------------------------------------------
+
+Question:  Do you have an idea of an abstract class
+
+            Account ???
+
+Which members could this class have ???
+
+Which methods could this class implement ???
+
+--------------------------------------------
+
+Note:  We have three concrete classes 
+
+        CreditAccount, StudentsAccount, SavingsAccount
+
+--------------------------------------------
+
+Finally:
+
+Example: Imagine, you have 5 concrete objects of Accounts:
+
+    How could you calculate "cleverly" / "smart" / "sophisticated"
+    the total Balance of these 5 accounts.
+
+--------------------------------------------
+
 
 
