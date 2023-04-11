@@ -20,8 +20,9 @@ void main_break();
 void main_pointers_vs_references();
 void main_pointers_vs_references_02();
 void main_operators();
+void main_inheritance();
 
 int main()
 {
-    main_operators();
+    main_inheritance();
 }

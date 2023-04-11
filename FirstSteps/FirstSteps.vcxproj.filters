@@ -69,6 +69,9 @@
     <ClCompile Include="Pointers_vs_References.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="Inheritance.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Common.h">

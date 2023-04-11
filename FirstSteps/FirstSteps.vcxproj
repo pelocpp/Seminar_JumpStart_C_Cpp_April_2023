@@ -136,6 +136,7 @@
     <ClCompile Include="Exercise_Faculty.cpp" />
     <ClCompile Include="Exercise_LowLevel.cpp" />
     <ClCompile Include="HelloWorld.cpp" />
+    <ClCompile Include="Inheritance.cpp" />
     <ClCompile Include="LowLevel.cpp" />
     <ClCompile Include="Main_Time.cpp" />
     <ClCompile Include="Pointer.cpp" />

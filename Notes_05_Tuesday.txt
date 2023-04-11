@@ -1,0 +1,146 @@
+// ==================================================
+// Notes to C /C++
+
+Tuesday / 5. Day:
+-------------------
+
+
+Inheritance:
+-------------
+
+When can I use Inheritance ??????
+
+(( the Compiler does NOT give an answer  ))
+
+== class Rectangle 
+
+== class ColoredRectangle
+
+-- All ColoredRectangles are Rectangles
+
+-- A ColoredRectangles is a Rectangle
+
+Relationships:  is - a Relationship   // ist-ein Beziehung
+
+-------------------------------------------
+
+== class Point  
+
+== class Line
+
+-- A Point is not a Line
+
+-- A Line consists of points
+
+-- A Line has points 
+
+   -- A Line is a Point:  False
+   -- A Point is a Line:  False
+
+
+-- A Line has two points 
+
+Relationsship:  has - a // Plural   // hat-ein Beziehung
+
+
+class  Line 
+{
+    Point m_begin;
+    Point m_end;
+    ......
+}
+
+-------------------------------------------
+
+
+Can I inherit from more than 1 class ???????
+
+In 90% of all programming languages:  NO
+
+In C++:                               YES
+
+Multiple Inheritance
+
+-------------------------------------------
+
+Wording with Inheritance:
+
+Base Class
+Parent Class
+
+Derived Class
+Child Class
+
+"inheriting a member of a base class"
+
+is-a Relation ship:
+
+A Child Class can be seen as a Specialization
+
+A Base Class can be seen as a Generalization
+
+------------------------------------------------
+
+protected:
+
+  is the same as private: From outside
+  is the same as pubic: From inside
+
+  
+------------------------------------------------
+
+virtual method:
+
+== Virtueller Funktionsaufrufmechanismus
+
+== Virtual Function Call Mechanism
+
+>> The Current object AT RUNTIME decides,
+   which method will be invoked
+
+
+No Virtual:
+
+>> The Datatype of the Pointer AT COMPILETIME decides,
+   which method will be invoked
+
+
+Which way should I go for defining methods:
+
+// virtual or not virtual 
+
+A) Not Virtual:
+
+   i) I have a method with an implementation (in a base class)
+
+   ii) Childs DON'T touch this method
+
+        Take it as it is
+
+B) Virtual:
+
+   i) I have a method with an implementation (in a base class)
+
+   ii) It could make sense, that child classes
+
+       "improve" this method.
+
+Take Care:
+
+One possible Disadvantage of "Virtual Function Call Mechanism":
+
+
+
+// ========================================================
+
+No Virtual
+
+The same method in a base and a child class:
+
+The method of the child class HIDES the method in the base class
+
+VERSTECKEN 
+
+// ========================================================
+
+
