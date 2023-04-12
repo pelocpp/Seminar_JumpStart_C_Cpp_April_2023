@@ -140,6 +140,7 @@
     <ClCompile Include="Exercise_Dynamic.cpp" />
     <ClCompile Include="Exercise_Faculty.cpp" />
     <ClCompile Include="Exercise_LowLevel.cpp" />
+    <ClCompile Include="Exercise_STL.cpp" />
     <ClCompile Include="HelloWorld.cpp" />
     <ClCompile Include="Inheritance.cpp" />
     <ClCompile Include="LowLevel.cpp" />

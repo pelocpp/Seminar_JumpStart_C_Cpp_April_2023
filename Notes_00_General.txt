@@ -1,0 +1,15 @@
+// =====================================================================
+// Notizzettel.txt
+// =====================================================================
+
+JumpStart C/C++ / Firmenseminar Accenture Ingolstadt / Gaimersheim
+
+peter.loos@gmx.de
+
+Peter Loos
+
+https://peterloos.de/
+
+https://github.com/pelocpp
+
+// =====================================================================
