@@ -310,6 +310,50 @@ Example: Imagine, you have 5 concrete objects of Accounts:
     the total Balance of these 5 accounts.
 
 --------------------------------------------
+--------------------------------------------
 
 
+C++
 
+History: Bjarne Stroustrup    // C with Classes
+
+         Alexander Stepanov   // C++ (included templates)
+
+         ===> Library of C++: 100% GP based Source Code
+              STL             Standard Template Library
+
+
+OO - Object Oriented Idiom
+
+GP - Generic Programming
+
+== Schablone / Vorlage
+
+== Template
+
+Level 1: Define Template
+
+Level 2: Instantiate this Template  ==> Concrete Class
+
+Level 3: Instantiate this Concrete Class  ==>  Object
+
+
+A)  Instantiating a Template
+
+B)  Specialization of a Template  == Instantiating a Template
+
+C)  FULL Specialization of a Template 
+
+
+Example:
+
+Integer Division:
+
+Default Behaviour:  Truncation
+
+int n = 4 / 6;   // 0 Truncation
+
+// Rounding: 4 / 6 = 1
+
+
+Floating-Point Division:

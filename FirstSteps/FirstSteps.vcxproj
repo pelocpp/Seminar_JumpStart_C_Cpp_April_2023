@@ -105,7 +105,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <LanguageStandard>stdcpp14</LanguageStandard>
+      <LanguageStandard>stdcpplatest</LanguageStandard>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -150,7 +150,9 @@
     <ClCompile Include="Pointers_vs_References.cpp" />
     <ClCompile Include="Program.cpp" />
     <ClCompile Include="Sractch.cpp" />
+    <ClCompile Include="STL.cpp" />
     <ClCompile Include="Strukturen.cpp" />
+    <ClCompile Include="Templates.cpp" />
     <ClCompile Include="Time.cpp" />
     <ClCompile Include="TypeCasting.cpp" />
   </ItemGroup>

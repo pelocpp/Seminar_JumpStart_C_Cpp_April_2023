@@ -18,7 +18,7 @@ void test_01_accounts () {
 
     std::cout << "Testing accounts:" << std::endl;
 
-    CreditAccount ca(123456, 1000);
+    AccountsAndBank::CreditAccount ca(123456, 1000);
     ca.deposit(100);
     ca.withdraw(40);
     std::cout << ca << std::endl;

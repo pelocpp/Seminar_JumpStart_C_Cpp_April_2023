@@ -22,8 +22,10 @@ void main_pointers_vs_references_02();
 void main_operators();
 void main_inheritance();
 int main_accounts();
+void test_gp();
+void main_stl();
 
 int main()
 {
-    main_accounts();
+    main_stl();
 }

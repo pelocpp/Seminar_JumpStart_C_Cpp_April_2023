@@ -1,0 +1,114 @@
+// ==================================================
+// Notes to C /C++
+
+Wednesday / 6. Day:
+-------------------
+
+STL - Standard Template Library
+-------------------------------
+
+Official Documentation
+
+https://en.cppreference.com/w/
+
+===============================================
+
+STL Container
+
+   Data Structures that administer data
+
+   == Array (not fixed size)
+   == Lists
+   == Hash Map (Dictionary)
+   == Trees
+
+STL Iterators
+
+   == Position (of an element in a container)
+   == Common Concept of Positions for all STL Containers
+
+
+STL Algorithms
+
+   == Searching, Iterating, Copying, Transforming, ...
+
+Callable Objects / Functor
+
+   == Describes methods, which can be passed to an 
+      STL Algorithm
+
+=========================================
+
+vector
+
+std::vector
+
+A std::vector has an internal Buffer!
+
+What's the size of this buffer? Capacity
+
+What happens, if this buffer is full ?
+
+== new is used to allocate a new, larger buffer
+== old buffer must be copied into the new larger buffer
+== the old buffer has to be released (delete)
+
+=========================================
+
+STL Iterators
+
+== Not difficult
+
+== The Name of the class of an Iterator is 
+
+      unknown // hidden // 
+
+
+Design Goal:  Just define ONE INTERFACE / eine Schnittstelle
+
+              for ALL Containers.
+
+Iterators:    Concept 
+
+
+=========================================
+
+Design Decision for STL Algorithms:
+
+STL Containers
+
+   ^
+   |
+   v
+
+STL Iterators
+
+   ^
+   |
+   v
+
+STL Algorithms
+
+=========================================
+
+STL Stylistic:
+
+Programming in Building Blocks
+
+Don't fight with indices
+
+Use Ranges // 2 Iterators from ---> to
+
+Logic Provided in Functions
+
+=========================================
+
+===>    Don't reinvent the Wheel   
+
+IF STL may help, use it !!!
+
+
+DRY -> Don't repeat yourself
+
+ONLY use a Tool, if it fits !!!!!!!!!!!!!!
+
