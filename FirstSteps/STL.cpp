@@ -309,7 +309,101 @@ void main_stl_09()
     );
 }
 
+// =============================================
+
+class Initialization
+{
+private: 
+    int m_start;
+
+public:
+    Initialization () : m_start (0) { }
+    Initialization(int start) : m_start(start) { }
+
+public:
+    //int operator() (int a, int b) {
+    //    return a + b;
+    //}
+
+    //// increment by 
+    //int operator() (int a) {
+    //    return a + m_start;
+    //}
+
+    void operator() (int a) {
+        std::cout << "===> " << a << std::endl;
+    }
+
+    // need an operator which returns a value
+    // incremented from call to call
+    int operator() () {
+        std::cout << "operator() called ... " << std::endl;
+        ++m_start;
+        return m_start;
+    }
+};
+
+void main_stl_10()
+{
+    Initialization obj (5);  // c'tor
+
+    //int result;
+
+    //result = obj (10);
+}
+
+void main_stl_11()
+{
+    // STL Container
+    std::vector<int> numbers;
+    numbers.resize(10);
+
+    Initialization init(9);
+
+    std::generate(
+        numbers.begin(),
+        numbers.end(),
+        init
+    );
+
+    // acts on a range
+    std::for_each(
+        numbers.begin(),
+        numbers.end(),
+        init
+    );
+}
+
+void main_stl_12()
+{
+    // STL Container
+    std::vector<int> numbers;
+    numbers.resize(10);
+
+    std::fill(
+        numbers.begin(),
+        numbers.end(),
+        123
+    );
+
+    std::generate(
+        numbers.begin(),
+        numbers.end(),
+        [start = 10] () mutable { 
+            ++start;
+            return start; 
+        }
+    );
+
+    // acts on a range
+    std::for_each(
+        numbers.begin(),
+        numbers.end(),
+        [] (int elem) {
+            std::cout << elem << std::endl;
+        });
+}
 void main_stl()
 {
-    main_stl_09();
+    main_stl_12();
 }

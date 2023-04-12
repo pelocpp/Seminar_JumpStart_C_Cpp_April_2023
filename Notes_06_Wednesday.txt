@@ -112,3 +112,80 @@ DRY -> Don't repeat yourself
 
 ONLY use a Tool, if it fits !!!!!!!!!!!!!!
 
+=========================================
+
+Feature in C++:  "Callable Object"
+
+A Class may / can provide so called "callable Objects",
+
+if operator () is implemented.
+
+Aufruf-Operator  
+
+// Function Call Operator 
+// Function Object
+// Functor
+
+
+operator+ : PRE-DEFINED NUMBER OF OPERANDS (2)
+
+compared with
+
+operator() : ARBITRARY NUMBER OF OPERANDS 
+
+When do I use  "Callable Object" ???
+
+E.g:  With STL Algorithms !
+
+
+What data type has the "3. Parameter" of many of these
+STL Algorithms ???
+
+"Callable" 
+
+// =============================================
+
+Devils Sequence
+
+Teufelsfolge
+
+Starting Value:  Positive integer n;
+
+n ==>
+
+n is even:  n => n / 2
+
+n is odd:   n => 3 * n + 1
+
+n = 7;  7 => 22 => 11 => 34 => 17 => 52
+
+          => 26 =>  13 => 40 => 20 => 10
+          => 5 => 16 => 8 => 4 => 2 => 1.
+
+
+Finite Sequence !
+
+A) Define a vector
+
+B) Resize it (( eg  100 ))
+
+C) Give a Start Value in Source Code:
+
+    int n = 7;
+
+D) Use std::generate to compute and fill
+   the vector with the values of the Devils 
+   Sequence
+
+
+E) Use std::for_each to print the calculated
+   sequence to console 
+
+
+// =======================================
+
+Fibonacci Numbers:
+
+
+
+         
