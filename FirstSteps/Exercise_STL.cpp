@@ -37,7 +37,7 @@ void main_teufel_01()
 
 // ===========================================================================
 
-// Function Object / Functor
+// Function Object / Callable Object
 class Fibonacci
 {
 private:
