@@ -167,7 +167,7 @@ Finite Sequence !
 
 A) Define a vector
 
-B) Resize it (( eg  100 ))
+B) Resize it (( eg  20 ))
 
 C) Give a Start Value in Source Code:
 
@@ -175,7 +175,12 @@ C) Give a Start Value in Source Code:
 
 D) Use std::generate to compute and fill
    the vector with the values of the Devils 
-   Sequence
+   Sequence / Fibonacci Numbers
+
+   "3. Parameter": 
+
+   i)  C-Function
+   ii) Callable Object / Class operator()
 
 
 E) Use std::for_each to print the calculated
